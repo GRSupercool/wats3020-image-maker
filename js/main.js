@@ -34,7 +34,7 @@ class ImageMaker {
         // those up for future use, too.
 
         // TODO: Select the `input` element with the `name` attribute "backgroundImage"
-        this.backgroundInput =document.forms[0].querySelector('select[name]="backgroundImage"');
+        this.backgroundImage =document.forms[0].querySelector('select[name]="backgroundImage"');
 
         // TODO: Select the `input` element with the `name` attribute "topText"
         this.topTextInput =document.forms[0].querySelector('select[name]="topText"');
@@ -53,11 +53,14 @@ class ImageMaker {
         // elements selected in the `constructor()` of this class in order to
         // update `this.imagePreview`.
 
-        // TODO: Update the `background-image` CSS property for `this.imagePreview`.
+        // TODO: Update the `background-image` CSS property for `this.imagePreview`. background-image
+        this.imagePreview.style.backgroundImage='url("images\${this.backgroundInput.value}"))';
 
         // TODO: Update the `innerHTML` of `this.topText`.
+        this.toptext.innerHTML=this.topTextInput.value;
 
         // TODO: Update the `innerHTML` of `this.bottomText`
+        this.bottomText.innerHTML=this.bottomTextInput.value;
 
 
     }
