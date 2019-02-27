@@ -19,7 +19,7 @@ class ImageMaker {
     
         this.topText=document.createElement('p');
        
-        this.topText.attributes('class','top-text');
+        this.topText.setAttribute('class','top-text');
       
         this.imagePreview.appendChild(this.topText);
 
@@ -47,13 +47,13 @@ class ImageMaker {
         // update `this.imagePreview`.
 
         
-        this.imagePreview.style.backgroundImage='url("images\${this.backgroundInput.value}")';
+        this.imagePreview.style.backgroundImage=`url("images/${this.backgroundInput.value}")`;
 
        
-        this.toptext.innerHTML=this.toptextInput.value;
+        this.topText.innerHTML=this.topTextInput.value;
 
      
-        this.bottomText.innerHTML=this.bottomtextInput.value;
+        this.bottomText.innerHTML=this.bottomTextInput.value;
 
 
     }
