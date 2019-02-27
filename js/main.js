@@ -23,18 +23,17 @@ class ImageMaker {
       
         this.imagePreview.appendChild(this.topText);
 
-       
         this.bottomText = document.createElement('p');
        
         this.bottomText.setAttribute ('class','bottom-text');
         
         this.imagePreview.appendChild(this.bottomText);
         
-        this.backgroundImage =document.forms[0].querySelector('select[name]="backgroundImage"');
+        this.backgroundInput =document.forms[0].querySelector('select[name]="backgroundImage"');
 
         this.topTextInput =document.forms[0].querySelector('input[name]="topText"');
       
-        this.bottomTextInput =document.forms[0].queryselector('input[name]="bottomText"') ;
+        this.bottomTextInput =document.forms[0].querySelector('input[name]="bottomText"') ;
 
         // NOTE: If you add additional form fields to modify other aspects of
         // the image, then you will need to make attributes for each of those
